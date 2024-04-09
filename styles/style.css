@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #363636 16.62%, #1C1C1C 85.61%);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+header nav{
+    display: flex;
+    gap: 32px;
+}
+
+header nav a{
+    font-family: monospace;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    transition: 0.7s;
+}
+
+header nav a:hover{
+    color: #83d2d9;
+}
+
+main{
+    border-top: 0.4px solid #83d2d9;
+    margin-bottom: 48px;
+}
+
+main .primeira{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main section div{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main section div h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+}
+
+main section div h2{
+    font-family: serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+main section div button{
+    background-color: #83d2d9;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+main section div button:hover{
+    background-color:#E0FFFF;
+}
+
+main section img{
+    height: 400px;
+}
+
+main .segunda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+main section h3{
+    border-top: 0.4px solid #83d2d9;
+    padding-top: 48px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+main section p{
+    font-family: serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border-top: 0.4px solid #83d2d9;
+}
+
+footer img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+footer p{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+button a{
+    font-family: serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: #363636;
+}
+
+@media screen and (max-width: 440px) {
+    
+    header{
+        flex-direction: column;
+    }
+
+    header nav a{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .retirar{
+        display: none;
+    }
+
+    main .primeira{
+        flex-direction: column-reverse;
+    }
+
+    main .primeira img{
+        margin-top: -30px;
+    }
+
+    main .primeira div{
+        margin-top: -80px;
+        align-items: center;
+    }
+
+    main .primeira div h1{
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    main .primeira div h2{
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: -20px;
+    }
+
+    .segunda h3{
+        margin-top: -10px;
+    }
+
+    .segunda p{
+        max-width: 360px;
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    
+    header{
+        flex-direction: column;
+    }
+
+    header nav a{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .retirar{
+        display: none;
+    }
+
+    main .primeira{
+        flex-direction: column-reverse;
+    }
+
+    main .primeira img{
+        margin-top: -30px;
+    }
+
+    main .primeira div{
+        margin-top: -80px;
+        align-items: center;
+    }
+
+    main .primeira div h1{
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    main .primeira div h2{
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: -20px;
+    }
+
+    .segunda h3{
+        margin-top: -10px;
+    }
+
+    .segunda p{
+        max-width: 360px;
+        font-weight: 100;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 385px) {
+    
+    header{
+        flex-direction: column;
+    }
+
+    header nav a{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .retirar{
+        display: none;
+    }
+
+    main .primeira{
+        flex-direction: column-reverse;
+    }
+
+    main .primeira img{
+        margin-top: -30px;
+    }
+
+    main .primeira div{
+        margin-top: -80px;
+        align-items: center;
+    }
+
+    main .primeira div h1{
+        font-weight: 300;
+        font-size: 60px;
+    }
+
+    main .primeira div h2{
+        font-weight: 300;
+        font-size: 17px;
+        margin-top: -20px;
+    }
+
+    .segunda h3{
+        margin-top: -10px;
+    }
+
+    .segunda p{
+        max-width: 350px;
+        font-weight: 100;
+        font-size: 16px;
+    }
+
+}
